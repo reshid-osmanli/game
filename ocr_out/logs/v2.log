@@ -1,15 +1,14 @@
 ==== v2 [1/5] deps ====
 Name: surya-ocr
-Version: 0.22.1
-Summary: OCR, layout, reading order, and table recognition in 90+ languages.
+Version: 0.17.1
+Summary: OCR, layout, reading order, and table recognition in 90+ languages
 Usage: surya_ocr [OPTIONS] INPUT_PATH
 
-  OCR text — full-page OCR (one VLM call per page).
+  OCR text.
 
 Options:
-  --keep_server      Keep the inference server (vllm/llama.cpp) running after
-                     this command exits so later commands reuse it instead of
-                     re-spawning.
+  --task_name TEXT
+  --disable_math     Do not recognize math in OCR.
   -d, --debug        Enable debug mode.
   --images           Save images of detected bboxes.
   --page_range TEXT  Page range to convert, specify comma separated page
@@ -19,87 +18,83 @@ Options:
 ==== v2 [2/5] ensure pdf + render ====
 Downloading...
 From (original): https://drive.google.com/uc?id=1k9Q7moUs8LBkMp4g6fTa5pxBXs7c4D72
-From (redirected): https://drive.google.com/uc?id=1k9Q7moUs8LBkMp4g6fTa5pxBXs7c4D72&confirm=t&uuid=24159404-db5a-431e-80c2-04f50ea22c1e
+From (redirected): https://drive.google.com/uc?id=1k9Q7moUs8LBkMp4g6fTa5pxBXs7c4D72&confirm=t&uuid=8e0d3a7c-34d6-4c62-b8f9-75f566b08e77
 To: /home/runner/work/game/game/work/book.pdf
-  0%|          | 0.00/137M [00:00<?, ?B/s]  3%|▎         | 4.72M/137M [00:00<00:05, 26.0MB/s]  5%|▌         | 7.34M/137M [00:00<00:05, 25.4MB/s] 17%|█▋        | 23.6M/137M [00:00<00:01, 61.7MB/s] 26%|██▌       | 35.7M/137M [00:00<00:01, 79.3MB/s] 32%|███▏      | 44.0M/137M [00:00<00:01, 69.2MB/s] 39%|███▊      | 53.0M/137M [00:00<00:01, 67.3MB/s] 48%|████▊     | 65.5M/137M [00:00<00:00, 73.8MB/s] 54%|█████▎    | 73.4M/137M [00:01<00:00, 74.1MB/s] 62%|██████▏   | 84.4M/137M [00:01<00:00, 59.0MB/s] 72%|███████▏  | 99.1M/137M [00:01<00:00, 51.1MB/s] 84%|████████▍ | 115M/137M [00:01<00:00, 68.1MB/s]  90%|█████████ | 124M/137M [00:01<00:00, 62.1MB/s]100%|██████████| 137M/137M [00:02<00:00, 65.8MB/s]
+  0%|          | 0.00/137M [00:00<?, ?B/s]  0%|          | 524k/137M [00:00<00:31, 4.39MB/s]  3%|▎         | 3.67M/137M [00:00<00:07, 18.4MB/s]  7%|▋         | 8.91M/137M [00:00<00:05, 22.4MB/s] 10%|▉         | 13.1M/137M [00:00<00:05, 23.5MB/s] 11%|█▏        | 15.7M/137M [00:00<00:05, 24.0MB/s] 14%|█▍        | 19.4M/137M [00:00<00:05, 21.5MB/s] 17%|█▋        | 23.6M/137M [00:01<00:05, 20.6MB/s] 22%|██▏       | 29.9M/137M [00:01<00:04, 24.8MB/s] 26%|██▋       | 36.2M/137M [00:01<00:03, 29.6MB/s] 31%|███       | 42.5M/137M [00:01<00:03, 30.4MB/s] 36%|███▌      | 48.8M/137M [00:01<00:02, 34.3MB/s] 42%|████▏     | 57.1M/137M [00:01<00:01, 40.8MB/s] 46%|████▋     | 63.4M/137M [00:02<00:01, 45.2MB/s] 51%|█████     | 69.7M/137M [00:02<00:01, 44.7MB/s] 57%|█████▋    | 78.1M/137M [00:02<00:01, 49.1MB/s] 65%|██████▍   | 88.6M/137M [00:02<00:00, 50.0MB/s] 72%|███████▏  | 99.1M/137M [00:02<00:00, 57.3MB/s] 80%|████████  | 110M/137M [00:02<00:00, 62.3MB/s]  86%|████████▌ | 118M/137M [00:02<00:00, 66.7MB/s] 92%|█████████▏| 125M/137M [00:03<00:00, 65.4MB/s] 98%|█████████▊| 135M/137M [00:03<00:00, 62.7MB/s]100%|██████████| 137M/137M [00:03<00:00, 42.5MB/s]
 pages: 242
 ==== v2 [3/5] compare samples pages 1-6 ====
 surya sample CLI failed
 [norm] json files in work/surya_sample: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 To https://github.com/reshid-osmanli/game
-   dca6aad..a547b41  HEAD -> arena/019fb85f-game
+   f3ceda6..40eae91  HEAD -> arena/019fb85f-game
 ==== v2 [3b] optional Qari sample (pages 1,5; timeboxed) ====
-[qari] loading omerxai/Qari-OCR-v0.3
-[qari] aborted: omerxai/Qari-OCR-v0.3 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
-If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
-Everything up-to-date
+qari phase disabled (enable by adding ocr/ENABLE_QARI)
 ==== v2 [4/5] full surya (chunked, resumable) ====
 --- surya chunk pages 1-20 / 242 ---
-chunk 0-19 failed
+chunk at 1 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 --- surya chunk pages 21-40 / 242 ---
-chunk 20-39 failed
+chunk at 21 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 --- surya chunk pages 41-60 / 242 ---
-chunk 40-59 failed
+chunk at 41 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 [assemble] 0 pages -> ocr_out/book_surya.partial.txt; missing pages so far: []
-To https://github.com/reshid-osmanli/game
-   a547b41..3956a93  HEAD -> arena/019fb85f-game
+Everything up-to-date
 --- surya chunk pages 61-80 / 242 ---
-chunk 60-79 failed
+chunk at 61 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 --- surya chunk pages 81-100 / 242 ---
-chunk 80-99 failed
+chunk at 81 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 --- surya chunk pages 101-120 / 242 ---
-chunk 100-119 failed
+chunk at 101 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 [assemble] 0 pages -> ocr_out/book_surya.partial.txt; missing pages so far: []
 Everything up-to-date
 --- surya chunk pages 121-140 / 242 ---
-chunk 120-139 failed
+chunk at 121 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 --- surya chunk pages 141-160 / 242 ---
-chunk 140-159 failed
+chunk at 141 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 --- surya chunk pages 161-180 / 242 ---
-chunk 160-179 failed
+chunk at 161 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 [assemble] 0 pages -> ocr_out/book_surya.partial.txt; missing pages so far: []
 Everything up-to-date
 --- surya chunk pages 181-200 / 242 ---
-chunk 180-199 failed
+chunk at 181 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 --- surya chunk pages 201-220 / 242 ---
-chunk 200-219 failed
+chunk at 201 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 --- surya chunk pages 221-240 / 242 ---
-chunk 220-239 failed
+chunk at 221 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 [assemble] 0 pages -> ocr_out/book_surya.partial.txt; missing pages so far: []
 Everything up-to-date
 --- surya chunk pages 241-242 / 242 ---
-chunk 240-241 failed
+chunk at 241 failed
 [norm] json files in work/surya_chunk: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
 ==== v2 [5/5] final assemble ====
 [assemble] 0 pages -> ocr_out/book_surya.txt; missing pages so far: []
 0 ocr_out/book_surya.txt
 To https://github.com/reshid-osmanli/game
-   3956a93..898b91e  HEAD -> arena/019fb85f-game
+   40eae91..520c360  HEAD -> arena/019fb85f-game
 V2 ALL DONE
 [exit handler] exit code = 0
