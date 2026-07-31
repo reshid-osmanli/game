@@ -1,0 +1,93 @@
+==== [1/6] Download ====
+--- gdown attempt 1 ---
+usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
+             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
+             [--json] [--format FORMAT] [--user-agent USER_AGENT]
+             url_or_id
+gdown: error: unrecognized arguments: --fuzzy
+--- gdown attempt 2 ---
+usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
+             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
+             [--json] [--format FORMAT] [--user-agent USER_AGENT]
+             url_or_id
+gdown: error: unrecognized arguments: --fuzzy
+--- gdown attempt 3 ---
+usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
+             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
+             [--json] [--format FORMAT] [--user-agent USER_AGENT]
+             url_or_id
+gdown: error: unrecognized arguments: --fuzzy
+--- gdown attempt 4 ---
+usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
+             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
+             [--json] [--format FORMAT] [--user-agent USER_AGENT]
+             url_or_id
+gdown: error: unrecognized arguments: --fuzzy
+--- gdown attempt 5 ---
+usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
+             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
+             [--json] [--format FORMAT] [--user-agent USER_AGENT]
+             url_or_id
+gdown: error: unrecognized arguments: --fuzzy
+--- curl uuid fallback ---
+uuid found: 'a9c30092-bf99-433e-b5d0-470829912868'
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0  130M    0  8259    0     0   7581      0  5:00:45  0:00:01  5:00:44  7584 35  130M   35 46.0M    0     0  23.8M      0  0:00:05  0:00:01  0:00:04 23.8M 81  130M   81  106M    0     0  36.1M      0  0:00:03  0:00:02  0:00:01 36.1M100  130M  100  130M    0     0  39.3M      0  0:00:03  0:00:03 --:--:-- 39.4M
+DL_OK=1
+-rw-r--r-- 1 runner runner 136805267 Jul 31 14:31 work/book.pdf
+PDF header OK
+==== [2/6] Info + embedded text check ====
+Title:           Combined PDF
+ModDate:         Wed May 20 10:35:11 2026 UTC
+Custom Metadata: no
+Metadata Stream: yes
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           242
+Encrypted:       no
+Page size:       592.661 x 837.818 pts
+Page rot:        0
+File size:       136805267 bytes
+Optimized:       no
+PDF version:     1.7
+Total pages: 242
+Embedded text chars: 242
+To https://github.com/reshid-osmanli/game
+   1784ef3..5563e35  HEAD -> arena/019fb85f-game
+==== [3/6] Sample renders + quick sample OCR ====
+total 312
+drwxr-xr-x 2 runner runner   4096 Jul 31 14:31 .
+drwxr-xr-x 4 runner runner   4096 Jul 31 14:31 ..
+-rw-r--r-- 1 runner runner 116659 Jul 31 14:31 page-001.jpg
+-rw-r--r-- 1 runner runner  92063 Jul 31 14:31 page-002.jpg
+-rw-r--r-- 1 runner runner  82445 Jul 31 14:31 page-003.jpg
+-rw-r--r-- 1 runner runner   2140 Jul 31 14:31 s-001.txt
+-rw-r--r-- 1 runner runner   1653 Jul 31 14:31 s-002.txt
+-rw-r--r-- 1 runner runner   1310 Jul 31 14:31 s-003.txt
+To https://github.com/reshid-osmanli/game
+   5563e35..506c13c  HEAD -> arena/019fb85f-game
+==== [4/6] Render all pages (300dpi gray) ====
+Rendered: 242 pages
+Everything up-to-date
+==== [5/6] OCR (tesseract ara, tessdata_best) ====
+--- chunk starting at page 1 / 242 ---
+OCR done for 100/242 pages
+To https://github.com/reshid-osmanli/game
+   506c13c..7dad321  HEAD -> arena/019fb85f-game
+--- chunk starting at page 101 / 242 ---
+OCR done for 200/242 pages
+To https://github.com/reshid-osmanli/game
+   7dad321..8e77a80  HEAD -> arena/019fb85f-game
+--- chunk starting at page 201 / 242 ---
+OCR done for 242/242 pages
+To https://github.com/reshid-osmanli/game
+   8e77a80..5fd8142  HEAD -> arena/019fb85f-game
+==== [6/6] Final assemble ====
+407112 ocr_out/book.txt
+407112 ocr_out/book.txt
+ALL DONE
+[exit handler] exit code = 0

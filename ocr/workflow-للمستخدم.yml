@@ -1,0 +1,73 @@
+name: ocr-book
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+  schedule:
+    - cron: '*/10 * * * *'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ocr-book
+  cancel-in-progress: false
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    env:
+      OMP_THREAD_LIMIT: "1"
+    steps:
+      - name: Checkout work branch
+        uses: actions/checkout@v4
+        with:
+          ref: arena/019fb85f-game
+
+      - name: Skip if ocr/ unchanged since last run
+        id: gate
+        run: |
+          git fetch --depth=1 origin main || true
+          TREE=$(git rev-parse HEAD:ocr)
+          LAST=$(git show origin/main:.ocr-last-tree 2>/dev/null || echo none)
+          echo "tree=$TREE last=$LAST"
+          if [ "$TREE" = "$LAST" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Install system deps
+        if: steps.gate.outputs.skip != 'true'
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y --no-install-recommends poppler-utils tesseract-ocr
+
+      - name: Install gdown + best Arabic traineddata
+        if: steps.gate.outputs.skip != 'true'
+        run: |
+          pip install --quiet gdown
+          TESSSYS=$(dirname "$(find /usr/share/tesseract-ocr -name 'eng.traineddata' | head -1)")
+          echo "system tessdata dir: $TESSSYS"
+          sudo curl -L --retry 3 -o "$TESSSYS/ara.traineddata" \
+            https://github.com/tesseract-ocr/tessdata_best/raw/main/ara.traineddata
+          ls -la "$TESSSYS"
+
+      - name: Run OCR pipeline
+        if: steps.gate.outputs.skip != 'true'
+        run: bash ocr/run.sh
+
+      - name: Record ocr tree on main
+        if: steps.gate.outputs.skip != 'true' && success()
+        run: |
+          SHA=$(git rev-parse origin/arena/019fb85f-game:ocr 2>/dev/null || git rev-parse HEAD:ocr)
+          git fetch origin main
+          git checkout main
+          echo "$SHA" > .ocr-last-tree
+          git config user.name "ocr-bot"
+          git config user.email "ocr-bot@users.noreply.github.com"
+          git add .ocr-last-tree
+          git commit -m "ocr: record last tree $SHA" || echo "no change"
+          git push origin main || echo "push skipped"
