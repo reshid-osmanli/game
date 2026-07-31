@@ -69,12 +69,14 @@ echo "pages: $TOTAL"
 [ "$TOTAL" -gt 0 ] || { echo "RENDER FAILED"; exit 1; }
 
 surya_run() {
-  # $1 = outdir, rest = image paths; classic surya (<0.20) = pure torch pipeline
-  out="$1"; shift
+  # $1 = outdir, $2 = 0-based page range (e.g. "0-5"), rest = fallback chunk images
+  out="$1"; range="$2"; shift 2
   mkdir -p "$out"
-  surya_ocr --output_dir "$out" "$@" >> work/v2_surya.log 2>&1 && return 0
-  surya_ocr "$@" --output_dir "$out" >> work/v2_surya.log 2>&1 && return 0
-  surya_ocr "$@" >> work/v2_surya.log 2>&1 && return 0
+  surya_ocr --output_dir "$out" --page_range "$range" work/book.pdf >> work/v2_surya.log 2>&1 && return 0
+  surya_ocr --page_range "$range" --output_dir "$out" work/book.pdf >> work/v2_surya.log 2>&1 && return 0
+  rm -rf work/surya_in; mkdir -p work/surya_in
+  for img in "$@"; do ln -sf "$(pwd)/$img" work/surya_in/; done
+  surya_ocr --output_dir "$out" work/surya_in >> work/v2_surya.log 2>&1 && return 0
   return 1
 }
 
@@ -84,7 +86,7 @@ for f in "${IMGS[@]:0:6}"; do
   tesseract "$f" stdout -l ara --psm 3 2>/dev/null > "ocr_out/compare/${b}.tess.txt" || true
 done
 rm -rf work/surya_sample
-surya_run work/surya_sample "${IMGS[@]:0:6}" || echo "surya sample CLI failed"
+surya_run work/surya_sample "0-5" "${IMGS[@]:0:6}" || echo "surya sample CLI failed"
 SAMPLE_JSON=$(find work/surya_sample -name "*.json" | head -1)
 [ -n "$SAMPLE_JSON" ] && head -c 4000 "$SAMPLE_JSON" > ocr_out/compare/sample_raw.json.txt
 python3 ocr/surya_norm.py work/surya_sample ocr_out/surya_pages || true
@@ -113,7 +115,7 @@ for ((i=0; i<TOTAL; i+=CH)); do
   if [ "$need" = 0 ]; then echo "chunk pages $((i+1))-$((j+1)) already done"; continue; fi
   echo "--- surya chunk pages $((i+1))-$((j+1)) / $TOTAL ---"
   rm -rf work/surya_chunk; mkdir -p work/surya_chunk
-  surya_run work/surya_chunk "${IMGS[@]:i:CH}" || echo "chunk at $((i+1)) failed"
+  surya_run work/surya_chunk "${i}-${j}" "${IMGS[@]:i:CH}" || echo "chunk at $((i+1)) failed"
   python3 ocr/surya_norm.py work/surya_chunk ocr_out/surya_pages || true
   if (( (i/CH) % 3 == 2 )); then
     python3 ocr/surya_norm.py --assemble ocr_out/surya_pages ocr_out/book_surya.partial.txt || true
