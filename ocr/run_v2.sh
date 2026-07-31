@@ -35,8 +35,9 @@ push_checkpoint() {
 [ -f ocr/DISABLE_V2 ] && { echo "v2 disabled"; exit 0; }
 
 echo "==== v2 [1/5] deps ===="
-pip install --quiet "surya-ocr<0.20" 2>&1 | tail -3
+pip install --quiet "surya-ocr<0.20" "transformers>=4.46,<4.50" 2>&1 | tail -3
 pip show surya-ocr 2>/dev/null | head -3 || true
+pip show transformers 2>/dev/null | head -2 || true
 ( surya_ocr --help 2>&1 || true ) | tee ocr_out/logs/surya_help.txt | head -40
 
 echo "==== v2 [2/5] ensure pdf + render ===="
