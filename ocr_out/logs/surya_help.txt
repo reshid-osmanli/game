@@ -3,11 +3,15 @@ Usage: surya_ocr [OPTIONS] INPUT_PATH
   OCR text.
 
 Options:
-  --task_name TEXT
-  --disable_math     Do not recognize math in OCR.
   -d, --debug        Enable debug mode.
   --images           Save images of detected bboxes.
   --page_range TEXT  Page range to convert, specify comma separated page
                      numbers or ranges.  Example: 0,5-10,20
   --output_dir PATH  Directory to save output.
+  --langs TEXT       Optional language(s) to use for OCR. Comma separate for
+                     multiple. Can be a capitalized language name, or a
+                     2-letter ISO 639 code.
+  --lang_file TEXT   Optional path to file with languages to use for OCR.
+                     Should be a JSON dict with file names as keys, and the
+                     value being a list of language codes/names.
   --help             Show this message and exit.
