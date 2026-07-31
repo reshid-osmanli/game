@@ -47,11 +47,21 @@ def normalize(indir, outdir):
         except Exception as e:
             print(f"[norm] cannot parse {jf}: {e}")
             continue
-        for fname, item in iter_entries(data, jf):
+        entries = list(iter_entries(data, jf))
+        # detect page-field base across this file: min(page)==0 -> 0-based global pdf pages
+        pfields = [it.get("page") for _, it in entries if isinstance(it, dict) and isinstance(it.get("page"), int)]
+        base0 = bool(pfields) and min(pfields) == 0
+        for fname, item in entries:
             text = extract_text(item)
             if not text:
                 continue
-            key = page_key_from_name(fname)
+            key = None
+            pg = item.get("page") if isinstance(item, dict) else None
+            if isinstance(pg, int):
+                # surya page fields are global 0-based pdf page indices
+                key = "p-%03d" % (pg + 1 if base0 or pg > 0 else pg + 1)
+            if key is None:
+                key = page_key_from_name(fname)
             if key is None:
                 key = page_key_from_name(jf)
             if key is None:

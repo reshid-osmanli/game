@@ -41,12 +41,27 @@ pip show surya-ocr 2>/dev/null | head -3 || true
 
 echo "==== v2 [2/5] ensure pdf + render ===="
 if [ ! -s work/book.pdf ]; then
-  for attempt in 1 2 3 4 5; do
-    gdown --fuzzy "https://drive.google.com/file/d/${FILE_ID}/view?usp=sharing" -O work/book.pdf && [ -s work/book.pdf ] && break
+  DL_OK=0
+  for attempt in 1 2 3; do
+    gdown "${FILE_ID}" -O work/book.pdf && [ -s work/book.pdf ] && DL_OK=1 && break
     sleep 15
   done
+  if [ "$DL_OK" = 0 ]; then
+    for attempt in 1 2 3; do
+      rm -f /tmp/ck.txt /tmp/pg.html
+      curl -sL -c /tmp/ck.txt "https://drive.usercontent.google.com/download?id=${FILE_ID}&export=download" -o /tmp/pg.html || true
+      uuid=$(sed -n 's/.*name="uuid" value="\([^"]*\)".*/\1/p' /tmp/pg.html | head -1)
+      echo "uuid: '${uuid}'"
+      if [ -n "$uuid" ]; then
+        curl -L -b /tmp/ck.txt -o work/book.pdf \
+          "https://drive.usercontent.google.com/download?id=${FILE_ID}&export=download&confirm=t&uuid=${uuid}" \
+          && [ -s work/book.pdf ] && DL_OK=1 && break
+      fi
+      sleep 15
+    done
+  fi
 fi
-[ -s work/book.pdf ] || { echo "NO PDF"; exit 1; }
+[ -s work/book.pdf ] && head -c 1024 work/book.pdf | grep -q "%PDF" || { echo "NO PDF"; exit 1; }
 ls work/pages/p-*.png >/dev/null 2>&1 || pdftoppm -r 300 -gray -png work/book.pdf work/pages/p
 mapfile -t IMGS < <(ls work/pages/p-*.png | sort)
 TOTAL=${#IMGS[@]}
@@ -54,12 +69,11 @@ echo "pages: $TOTAL"
 [ "$TOTAL" -gt 0 ] || { echo "RENDER FAILED"; exit 1; }
 
 surya_run() {
-  # $1 = outdir, rest = images ; try known CLI shapes, log everything
-  out="$1"; shift
+  # $1 = outdir, $2 = page range (0-based, e.g. "0-5"); one VLM server kept warm across calls
+  out="$1"; range="$2"
   mkdir -p "$out"
-  surya_ocr --output_dir "$out" "$@" >> work/v2_surya.log 2>&1 && return 0
-  surya_ocr "$@" --output_dir "$out" >> work/v2_surya.log 2>&1 && return 0
-  surya_ocr "$@" >> work/v2_surya.log 2>&1 && return 0
+  surya_ocr --keep_server --output_dir "$out" --page_range "$range" work/book.pdf >> work/v2_surya.log 2>&1 && return 0
+  surya_ocr --output_dir "$out" --page_range "$range" work/book.pdf >> work/v2_surya.log 2>&1 && return 0
   return 1
 }
 
@@ -69,7 +83,9 @@ for f in "${IMGS[@]:0:6}"; do
   tesseract "$f" stdout -l ara --psm 3 2>/dev/null > "ocr_out/compare/${b}.tess.txt" || true
 done
 rm -rf work/surya_sample
-surya_run work/surya_sample "${IMGS[@]:0:6}" || echo "surya sample CLI failed"
+surya_run work/surya_sample "0-5" || echo "surya sample CLI failed"
+SAMPLE_JSON=$(find work/surya_sample -name "*.json" | head -1)
+[ -n "$SAMPLE_JSON" ] && head -c 4000 "$SAMPLE_JSON" > ocr_out/compare/sample_raw.json.txt
 python3 ocr/surya_norm.py work/surya_sample ocr_out/surya_pages || true
 for i in 1 2 3 4 5 6; do
   s=$(printf "ocr_out/surya_pages/p-%03d.txt" "$i")
@@ -82,20 +98,22 @@ timeout 1500 python3 ocr/qari_pages.py work/pages/p-001.png work/pages/p-005.png
 push_checkpoint "ocr v2: qari sample phase done"
 
 echo "==== v2 [4/5] full surya (chunked, resumable) ===="
+# one range covering remaining pages; shards let us skip completed ones on resume
+END=$((TOTAL-1))
 for ((i=0; i<TOTAL; i+=CH)); do
+  j=$((i+CH-1)); [ $j -gt $END ] && j=$END
   need=0
-  for f in "${IMGS[@]:i:CH}"; do
-    b=$(basename "$f" .png)
-    [ -s "ocr_out/surya_pages/${b}.txt" ] || need=1
+  for ((k=i; k<=j; k++)); do
+    [ -s "$(printf 'ocr_out/surya_pages/p-%03d.txt' $((k+1)))" ] || need=1
   done
-  if [ "$need" = 0 ]; then echo "chunk @$((i+1)) already done"; continue; fi
-  echo "--- surya chunk starting page $((i+1))/$TOTAL ---"
+  if [ "$need" = 0 ]; then echo "chunk pages $((i+1))-$((j+1)) already done"; continue; fi
+  echo "--- surya chunk pages $((i+1))-$((j+1)) / $TOTAL ---"
   rm -rf work/surya_chunk; mkdir -p work/surya_chunk
-  surya_run work/surya_chunk "${IMGS[@]:i:CH}" || echo "chunk @$i failed"
+  surya_run work/surya_chunk "${i}-${j}" || echo "chunk ${i}-${j} failed"
   python3 ocr/surya_norm.py work/surya_chunk ocr_out/surya_pages || true
   if (( (i/CH) % 3 == 2 )); then
     python3 ocr/surya_norm.py --assemble ocr_out/surya_pages ocr_out/book_surya.partial.txt || true
-    push_checkpoint "ocr v2: surya progress past page $((i+CH))"
+    push_checkpoint "ocr v2: surya progress past page $((j+1))"
   fi
 done
 

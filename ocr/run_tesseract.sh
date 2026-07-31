@@ -7,6 +7,10 @@ BRANCH="arena/019fb85f-game"
 CHUNK=100
 
 cd "$(git rev-parse --show-toplevel)"
+if [ -s ocr_out/book.txt ] && [ -s ocr_out/DONE.txt ]; then
+  echo "[v1] already complete, skipping"
+  exit 0
+fi
 mkdir -p work/pages work/txt ocr_out/samples ocr_out/logs
 
 git config user.name "arena-ocr-bot"
@@ -33,11 +37,10 @@ push_checkpoint() {
 }
 
 echo "==== [1/6] Download ===="
-URL_VIEW="https://drive.google.com/file/d/${FILE_ID}/view?usp=sharing"
 DL_OK=0
 for attempt in 1 2 3 4 5; do
   echo "--- gdown attempt $attempt ---"
-  gdown --fuzzy "$URL_VIEW" -O work/book.pdf && [ -s work/book.pdf ] && DL_OK=1 && break
+  gdown "${FILE_ID}" -O work/book.pdf && [ -s work/book.pdf ] && DL_OK=1 && break
   sleep 15
 done
 if [ "$DL_OK" = 0 ]; then
