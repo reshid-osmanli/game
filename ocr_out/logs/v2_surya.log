@@ -1,168 +1,2124 @@
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
+Downloading manifest.json:   0%|          | 0.00/262 [00:00<?, ?B/s]Downloading manifest.json: 100%|██████████| 262/262 [00:00<00:00, 1.36MB/s]
+Downloading text_recognition model to /home/runner/.cache/datalab/models/text_recognition/2025_09_23:   0%|          | 0/12 [00:00<?, ?it/s]
+Downloading vocab_math.json:   0%|          | 0.00/20.1k [00:00<?, ?B/s][ADownloading vocab_math.json: 100%|██████████| 20.1k/20.1k [00:00<00:00, 45.3MB/s]
 
-Error: Got unexpected extra arguments (work/pages/p-002.png work/pages/p-003.png work/pages/p-004.png work/pages/p-005.png work/pages/p-006.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
+Downloading specials.json:   0%|          | 0.00/19.6k [00:00<?, ?B/s][A
 
-Error: Got unexpected extra arguments (work/pages/p-002.png work/pages/p-003.png work/pages/p-004.png work/pages/p-005.png work/pages/p-006.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
+Downloading config.json:   0%|          | 0.00/50.2k [00:00<?, ?B/s][A[ADownloading specials.json: 100%|██████████| 19.6k/19.6k [00:00<00:00, 18.6MB/s]
 
-Error: Got unexpected extra arguments (work/pages/p-002.png work/pages/p-003.png work/pages/p-004.png work/pages/p-005.png work/pages/p-006.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
+Downloading README.md:   0%|          | 0.00/5.05k [00:00<?, ?B/s][ADownloading README.md: 100%|██████████| 5.05k/5.05k [00:00<00:00, 9.25MB/s]
+Downloading config.json: 100%|██████████| 50.2k/50.2k [00:00<00:00, 11.2MB/s]
 
-Error: Got unexpected extra arguments (work/pages/p-002.png work/pages/p-003.png work/pages/p-004.png work/pages/p-005.png work/pages/p-006.png work/pages/p-007.png work/pages/p-008.png work/pages/p-009.png work/pages/p-010.png work/pages/p-011.png work/pages/p-012.png work/pages/p-013.png work/pages/p-014.png work/pages/p-015.png work/pages/p-016.png work/pages/p-017.png work/pages/p-018.png work/pages/p-019.png work/pages/p-020.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
+Downloading specials_dict.json:   0%|          | 0.00/43.5k [00:00<?, ?B/s][A
 
-Error: Got unexpected extra arguments (work/pages/p-002.png work/pages/p-003.png work/pages/p-004.png work/pages/p-005.png work/pages/p-006.png work/pages/p-007.png work/pages/p-008.png work/pages/p-009.png work/pages/p-010.png work/pages/p-011.png work/pages/p-012.png work/pages/p-013.png work/pages/p-014.png work/pages/p-015.png work/pages/p-016.png work/pages/p-017.png work/pages/p-018.png work/pages/p-019.png work/pages/p-020.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
+Downloading special_tokens_map.json:   0%|          | 0.00/278 [00:00<?, ?B/s][A[ADownloading special_tokens_map.json: 100%|██████████| 278/278 [00:00<00:00, 956kB/s]
+Downloading specials_dict.json: 100%|██████████| 43.5k/43.5k [00:00<00:00, 20.6MB/s]
 
-Error: Got unexpected extra arguments (work/pages/p-002.png work/pages/p-003.png work/pages/p-004.png work/pages/p-005.png work/pages/p-006.png work/pages/p-007.png work/pages/p-008.png work/pages/p-009.png work/pages/p-010.png work/pages/p-011.png work/pages/p-012.png work/pages/p-013.png work/pages/p-014.png work/pages/p-015.png work/pages/p-016.png work/pages/p-017.png work/pages/p-018.png work/pages/p-019.png work/pages/p-020.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
+Downloading .gitattributes:   0%|          | 0.00/1.48k [00:00<?, ?B/s][A
 
-Error: Got unexpected extra arguments (work/pages/p-022.png work/pages/p-023.png work/pages/p-024.png work/pages/p-025.png work/pages/p-026.png work/pages/p-027.png work/pages/p-028.png work/pages/p-029.png work/pages/p-030.png work/pages/p-031.png work/pages/p-032.png work/pages/p-033.png work/pages/p-034.png work/pages/p-035.png work/pages/p-036.png work/pages/p-037.png work/pages/p-038.png work/pages/p-039.png work/pages/p-040.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
+Downloading preprocessor_config.json:   0%|          | 0.00/419 [00:00<?, ?B/s][A[ADownloading .gitattributes: 100%|██████████| 1.48k/1.48k [00:00<00:00, 1.98MB/s]
+Downloading preprocessor_config.json: 100%|██████████| 419/419 [00:00<00:00, 792kB/s]
+Downloading text_recognition model to /home/runner/.cache/datalab/models/text_recognition/2025_09_23:   8%|▊         | 1/12 [00:00<00:02,  4.48it/s]
+Downloading tokenizer_config.json:   0%|          | 0.00/694 [00:00<?, ?B/s][A
 
-Error: Got unexpected extra arguments (work/pages/p-022.png work/pages/p-023.png work/pages/p-024.png work/pages/p-025.png work/pages/p-026.png work/pages/p-027.png work/pages/p-028.png work/pages/p-029.png work/pages/p-030.png work/pages/p-031.png work/pages/p-032.png work/pages/p-033.png work/pages/p-034.png work/pages/p-035.png work/pages/p-036.png work/pages/p-037.png work/pages/p-038.png work/pages/p-039.png work/pages/p-040.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
+Downloading training_args.bin:   0%|          | 0.00/7.45k [00:00<?, ?B/s][A[ADownloading tokenizer_config.json: 100%|██████████| 694/694 [00:00<00:00, 2.04MB/s]
+Downloading training_args.bin: 100%|██████████| 7.45k/7.45k [00:00<00:00, 5.08MB/s]
 
-Error: Got unexpected extra arguments (work/pages/p-022.png work/pages/p-023.png work/pages/p-024.png work/pages/p-025.png work/pages/p-026.png work/pages/p-027.png work/pages/p-028.png work/pages/p-029.png work/pages/p-030.png work/pages/p-031.png work/pages/p-032.png work/pages/p-033.png work/pages/p-034.png work/pages/p-035.png work/pages/p-036.png work/pages/p-037.png work/pages/p-038.png work/pages/p-039.png work/pages/p-040.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
+Downloading processor_config.json:   0%|          | 0.00/411 [00:00<?, ?B/s][ADownloading processor_config.json: 100%|██████████| 411/411 [00:00<00:00, 2.13MB/s]
 
-Error: Got unexpected extra arguments (work/pages/p-042.png work/pages/p-043.png work/pages/p-044.png work/pages/p-045.png work/pages/p-046.png work/pages/p-047.png work/pages/p-048.png work/pages/p-049.png work/pages/p-050.png work/pages/p-051.png work/pages/p-052.png work/pages/p-053.png work/pages/p-054.png work/pages/p-055.png work/pages/p-056.png work/pages/p-057.png work/pages/p-058.png work/pages/p-059.png work/pages/p-060.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-042.png work/pages/p-043.png work/pages/p-044.png work/pages/p-045.png work/pages/p-046.png work/pages/p-047.png work/pages/p-048.png work/pages/p-049.png work/pages/p-050.png work/pages/p-051.png work/pages/p-052.png work/pages/p-053.png work/pages/p-054.png work/pages/p-055.png work/pages/p-056.png work/pages/p-057.png work/pages/p-058.png work/pages/p-059.png work/pages/p-060.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-042.png work/pages/p-043.png work/pages/p-044.png work/pages/p-045.png work/pages/p-046.png work/pages/p-047.png work/pages/p-048.png work/pages/p-049.png work/pages/p-050.png work/pages/p-051.png work/pages/p-052.png work/pages/p-053.png work/pages/p-054.png work/pages/p-055.png work/pages/p-056.png work/pages/p-057.png work/pages/p-058.png work/pages/p-059.png work/pages/p-060.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-062.png work/pages/p-063.png work/pages/p-064.png work/pages/p-065.png work/pages/p-066.png work/pages/p-067.png work/pages/p-068.png work/pages/p-069.png work/pages/p-070.png work/pages/p-071.png work/pages/p-072.png work/pages/p-073.png work/pages/p-074.png work/pages/p-075.png work/pages/p-076.png work/pages/p-077.png work/pages/p-078.png work/pages/p-079.png work/pages/p-080.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-062.png work/pages/p-063.png work/pages/p-064.png work/pages/p-065.png work/pages/p-066.png work/pages/p-067.png work/pages/p-068.png work/pages/p-069.png work/pages/p-070.png work/pages/p-071.png work/pages/p-072.png work/pages/p-073.png work/pages/p-074.png work/pages/p-075.png work/pages/p-076.png work/pages/p-077.png work/pages/p-078.png work/pages/p-079.png work/pages/p-080.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-062.png work/pages/p-063.png work/pages/p-064.png work/pages/p-065.png work/pages/p-066.png work/pages/p-067.png work/pages/p-068.png work/pages/p-069.png work/pages/p-070.png work/pages/p-071.png work/pages/p-072.png work/pages/p-073.png work/pages/p-074.png work/pages/p-075.png work/pages/p-076.png work/pages/p-077.png work/pages/p-078.png work/pages/p-079.png work/pages/p-080.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-082.png work/pages/p-083.png work/pages/p-084.png work/pages/p-085.png work/pages/p-086.png work/pages/p-087.png work/pages/p-088.png work/pages/p-089.png work/pages/p-090.png work/pages/p-091.png work/pages/p-092.png work/pages/p-093.png work/pages/p-094.png work/pages/p-095.png work/pages/p-096.png work/pages/p-097.png work/pages/p-098.png work/pages/p-099.png work/pages/p-100.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-082.png work/pages/p-083.png work/pages/p-084.png work/pages/p-085.png work/pages/p-086.png work/pages/p-087.png work/pages/p-088.png work/pages/p-089.png work/pages/p-090.png work/pages/p-091.png work/pages/p-092.png work/pages/p-093.png work/pages/p-094.png work/pages/p-095.png work/pages/p-096.png work/pages/p-097.png work/pages/p-098.png work/pages/p-099.png work/pages/p-100.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-082.png work/pages/p-083.png work/pages/p-084.png work/pages/p-085.png work/pages/p-086.png work/pages/p-087.png work/pages/p-088.png work/pages/p-089.png work/pages/p-090.png work/pages/p-091.png work/pages/p-092.png work/pages/p-093.png work/pages/p-094.png work/pages/p-095.png work/pages/p-096.png work/pages/p-097.png work/pages/p-098.png work/pages/p-099.png work/pages/p-100.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-102.png work/pages/p-103.png work/pages/p-104.png work/pages/p-105.png work/pages/p-106.png work/pages/p-107.png work/pages/p-108.png work/pages/p-109.png work/pages/p-110.png work/pages/p-111.png work/pages/p-112.png work/pages/p-113.png work/pages/p-114.png work/pages/p-115.png work/pages/p-116.png work/pages/p-117.png work/pages/p-118.png work/pages/p-119.png work/pages/p-120.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-102.png work/pages/p-103.png work/pages/p-104.png work/pages/p-105.png work/pages/p-106.png work/pages/p-107.png work/pages/p-108.png work/pages/p-109.png work/pages/p-110.png work/pages/p-111.png work/pages/p-112.png work/pages/p-113.png work/pages/p-114.png work/pages/p-115.png work/pages/p-116.png work/pages/p-117.png work/pages/p-118.png work/pages/p-119.png work/pages/p-120.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-102.png work/pages/p-103.png work/pages/p-104.png work/pages/p-105.png work/pages/p-106.png work/pages/p-107.png work/pages/p-108.png work/pages/p-109.png work/pages/p-110.png work/pages/p-111.png work/pages/p-112.png work/pages/p-113.png work/pages/p-114.png work/pages/p-115.png work/pages/p-116.png work/pages/p-117.png work/pages/p-118.png work/pages/p-119.png work/pages/p-120.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-122.png work/pages/p-123.png work/pages/p-124.png work/pages/p-125.png work/pages/p-126.png work/pages/p-127.png work/pages/p-128.png work/pages/p-129.png work/pages/p-130.png work/pages/p-131.png work/pages/p-132.png work/pages/p-133.png work/pages/p-134.png work/pages/p-135.png work/pages/p-136.png work/pages/p-137.png work/pages/p-138.png work/pages/p-139.png work/pages/p-140.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-122.png work/pages/p-123.png work/pages/p-124.png work/pages/p-125.png work/pages/p-126.png work/pages/p-127.png work/pages/p-128.png work/pages/p-129.png work/pages/p-130.png work/pages/p-131.png work/pages/p-132.png work/pages/p-133.png work/pages/p-134.png work/pages/p-135.png work/pages/p-136.png work/pages/p-137.png work/pages/p-138.png work/pages/p-139.png work/pages/p-140.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-122.png work/pages/p-123.png work/pages/p-124.png work/pages/p-125.png work/pages/p-126.png work/pages/p-127.png work/pages/p-128.png work/pages/p-129.png work/pages/p-130.png work/pages/p-131.png work/pages/p-132.png work/pages/p-133.png work/pages/p-134.png work/pages/p-135.png work/pages/p-136.png work/pages/p-137.png work/pages/p-138.png work/pages/p-139.png work/pages/p-140.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-142.png work/pages/p-143.png work/pages/p-144.png work/pages/p-145.png work/pages/p-146.png work/pages/p-147.png work/pages/p-148.png work/pages/p-149.png work/pages/p-150.png work/pages/p-151.png work/pages/p-152.png work/pages/p-153.png work/pages/p-154.png work/pages/p-155.png work/pages/p-156.png work/pages/p-157.png work/pages/p-158.png work/pages/p-159.png work/pages/p-160.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-142.png work/pages/p-143.png work/pages/p-144.png work/pages/p-145.png work/pages/p-146.png work/pages/p-147.png work/pages/p-148.png work/pages/p-149.png work/pages/p-150.png work/pages/p-151.png work/pages/p-152.png work/pages/p-153.png work/pages/p-154.png work/pages/p-155.png work/pages/p-156.png work/pages/p-157.png work/pages/p-158.png work/pages/p-159.png work/pages/p-160.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-142.png work/pages/p-143.png work/pages/p-144.png work/pages/p-145.png work/pages/p-146.png work/pages/p-147.png work/pages/p-148.png work/pages/p-149.png work/pages/p-150.png work/pages/p-151.png work/pages/p-152.png work/pages/p-153.png work/pages/p-154.png work/pages/p-155.png work/pages/p-156.png work/pages/p-157.png work/pages/p-158.png work/pages/p-159.png work/pages/p-160.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-162.png work/pages/p-163.png work/pages/p-164.png work/pages/p-165.png work/pages/p-166.png work/pages/p-167.png work/pages/p-168.png work/pages/p-169.png work/pages/p-170.png work/pages/p-171.png work/pages/p-172.png work/pages/p-173.png work/pages/p-174.png work/pages/p-175.png work/pages/p-176.png work/pages/p-177.png work/pages/p-178.png work/pages/p-179.png work/pages/p-180.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-162.png work/pages/p-163.png work/pages/p-164.png work/pages/p-165.png work/pages/p-166.png work/pages/p-167.png work/pages/p-168.png work/pages/p-169.png work/pages/p-170.png work/pages/p-171.png work/pages/p-172.png work/pages/p-173.png work/pages/p-174.png work/pages/p-175.png work/pages/p-176.png work/pages/p-177.png work/pages/p-178.png work/pages/p-179.png work/pages/p-180.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-162.png work/pages/p-163.png work/pages/p-164.png work/pages/p-165.png work/pages/p-166.png work/pages/p-167.png work/pages/p-168.png work/pages/p-169.png work/pages/p-170.png work/pages/p-171.png work/pages/p-172.png work/pages/p-173.png work/pages/p-174.png work/pages/p-175.png work/pages/p-176.png work/pages/p-177.png work/pages/p-178.png work/pages/p-179.png work/pages/p-180.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-182.png work/pages/p-183.png work/pages/p-184.png work/pages/p-185.png work/pages/p-186.png work/pages/p-187.png work/pages/p-188.png work/pages/p-189.png work/pages/p-190.png work/pages/p-191.png work/pages/p-192.png work/pages/p-193.png work/pages/p-194.png work/pages/p-195.png work/pages/p-196.png work/pages/p-197.png work/pages/p-198.png work/pages/p-199.png work/pages/p-200.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-182.png work/pages/p-183.png work/pages/p-184.png work/pages/p-185.png work/pages/p-186.png work/pages/p-187.png work/pages/p-188.png work/pages/p-189.png work/pages/p-190.png work/pages/p-191.png work/pages/p-192.png work/pages/p-193.png work/pages/p-194.png work/pages/p-195.png work/pages/p-196.png work/pages/p-197.png work/pages/p-198.png work/pages/p-199.png work/pages/p-200.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-182.png work/pages/p-183.png work/pages/p-184.png work/pages/p-185.png work/pages/p-186.png work/pages/p-187.png work/pages/p-188.png work/pages/p-189.png work/pages/p-190.png work/pages/p-191.png work/pages/p-192.png work/pages/p-193.png work/pages/p-194.png work/pages/p-195.png work/pages/p-196.png work/pages/p-197.png work/pages/p-198.png work/pages/p-199.png work/pages/p-200.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-202.png work/pages/p-203.png work/pages/p-204.png work/pages/p-205.png work/pages/p-206.png work/pages/p-207.png work/pages/p-208.png work/pages/p-209.png work/pages/p-210.png work/pages/p-211.png work/pages/p-212.png work/pages/p-213.png work/pages/p-214.png work/pages/p-215.png work/pages/p-216.png work/pages/p-217.png work/pages/p-218.png work/pages/p-219.png work/pages/p-220.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-202.png work/pages/p-203.png work/pages/p-204.png work/pages/p-205.png work/pages/p-206.png work/pages/p-207.png work/pages/p-208.png work/pages/p-209.png work/pages/p-210.png work/pages/p-211.png work/pages/p-212.png work/pages/p-213.png work/pages/p-214.png work/pages/p-215.png work/pages/p-216.png work/pages/p-217.png work/pages/p-218.png work/pages/p-219.png work/pages/p-220.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-202.png work/pages/p-203.png work/pages/p-204.png work/pages/p-205.png work/pages/p-206.png work/pages/p-207.png work/pages/p-208.png work/pages/p-209.png work/pages/p-210.png work/pages/p-211.png work/pages/p-212.png work/pages/p-213.png work/pages/p-214.png work/pages/p-215.png work/pages/p-216.png work/pages/p-217.png work/pages/p-218.png work/pages/p-219.png work/pages/p-220.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-222.png work/pages/p-223.png work/pages/p-224.png work/pages/p-225.png work/pages/p-226.png work/pages/p-227.png work/pages/p-228.png work/pages/p-229.png work/pages/p-230.png work/pages/p-231.png work/pages/p-232.png work/pages/p-233.png work/pages/p-234.png work/pages/p-235.png work/pages/p-236.png work/pages/p-237.png work/pages/p-238.png work/pages/p-239.png work/pages/p-240.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-222.png work/pages/p-223.png work/pages/p-224.png work/pages/p-225.png work/pages/p-226.png work/pages/p-227.png work/pages/p-228.png work/pages/p-229.png work/pages/p-230.png work/pages/p-231.png work/pages/p-232.png work/pages/p-233.png work/pages/p-234.png work/pages/p-235.png work/pages/p-236.png work/pages/p-237.png work/pages/p-238.png work/pages/p-239.png work/pages/p-240.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra arguments (work/pages/p-222.png work/pages/p-223.png work/pages/p-224.png work/pages/p-225.png work/pages/p-226.png work/pages/p-227.png work/pages/p-228.png work/pages/p-229.png work/pages/p-230.png work/pages/p-231.png work/pages/p-232.png work/pages/p-233.png work/pages/p-234.png work/pages/p-235.png work/pages/p-236.png work/pages/p-237.png work/pages/p-238.png work/pages/p-239.png work/pages/p-240.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra argument (work/pages/p-242.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra argument (work/pages/p-242.png)
-Usage: surya_ocr [OPTIONS] INPUT_PATH
-Try 'surya_ocr --help' for help.
-
-Error: Got unexpected extra argument (work/pages/p-242.png)
+Downloading model.safetensors:   0%|          | 0.00/1.34G [00:00<?, ?B/s][A
+Downloading model.safetensors:   1%|          | 8.00M/1.34G [00:00<00:24, 57.4MB/s][A
+Downloading model.safetensors:   2%|▏         | 22.0M/1.34G [00:00<00:18, 78.6MB/s][A
+Downloading model.safetensors:   3%|▎         | 35.0M/1.34G [00:00<00:14, 96.9MB/s][A
+Downloading model.safetensors:   3%|▎         | 44.0M/1.34G [00:00<00:15, 92.4MB/s][A
+Downloading model.safetensors:   4%|▍         | 53.0M/1.34G [00:00<00:15, 89.7MB/s][A
+Downloading model.safetensors:   4%|▍         | 59.0M/1.34G [00:00<00:17, 80.0MB/s][A
+Downloading model.safetensors:   5%|▍         | 68.0M/1.34G [00:00<00:16, 81.9MB/s][A
+Downloading model.safetensors:   5%|▌         | 70.0M/1.34G [00:00<00:22, 60.2MB/s][A
+Downloading model.safetensors:   6%|▌         | 82.0M/1.34G [00:01<00:17, 75.4MB/s][A
+Downloading model.safetensors:   6%|▋         | 87.0M/1.34G [00:01<00:21, 62.3MB/s][A
+Downloading model.safetensors:   7%|▋         | 91.0M/1.34G [00:01<00:24, 56.0MB/s][A
+Downloading model.safetensors:   7%|▋         | 94.0M/1.34G [00:01<00:27, 48.3MB/s][A
+Downloading model.safetensors:   7%|▋         | 99.0M/1.34G [00:01<00:27, 48.7MB/s][A
+Downloading model.safetensors:   7%|▋         | 101M/1.34G [00:01<00:33, 39.5MB/s] [A
+Downloading model.safetensors:   8%|▊         | 105M/1.34G [00:01<00:33, 39.2MB/s][A
+Downloading model.safetensors:   8%|▊         | 109M/1.34G [00:01<00:39, 33.6MB/s][A
+Downloading model.safetensors:   8%|▊         | 114M/1.34G [00:02<00:35, 37.0MB/s][A
+Downloading model.safetensors:   9%|▊         | 117M/1.34G [00:02<00:39, 33.4MB/s][A
+Downloading model.safetensors:   9%|▉         | 121M/1.34G [00:02<00:37, 34.9MB/s][A
+Downloading model.safetensors:   9%|▉         | 125M/1.34G [00:02<00:37, 34.8MB/s][A
+Downloading model.safetensors:  10%|█         | 139M/1.34G [00:02<00:20, 63.4MB/s][A
+Downloading model.safetensors:  11%|█         | 148M/1.34G [00:02<00:17, 71.4MB/s][A
+Downloading model.safetensors:  11%|█▏        | 157M/1.34G [00:02<00:16, 76.7MB/s][A
+Downloading model.safetensors:  13%|█▎        | 173M/1.34G [00:02<00:13, 91.5MB/s][A
+Downloading model.safetensors:  13%|█▎        | 184M/1.34G [00:02<00:12, 97.5MB/s][A
+Downloading model.safetensors:  14%|█▎        | 187M/1.34G [00:03<00:16, 74.3MB/s][A
+Downloading model.safetensors:  15%|█▍        | 200M/1.34G [00:03<00:13, 89.5MB/s][A
+Downloading model.safetensors:  15%|█▌        | 207M/1.34G [00:03<00:14, 84.7MB/s][A
+Downloading model.safetensors:  16%|█▌        | 219M/1.34G [00:03<00:13, 91.6MB/s][A
+Downloading model.safetensors:  17%|█▋        | 234M/1.34G [00:03<00:10, 109MB/s] [A
+Downloading model.safetensors:  18%|█▊        | 242M/1.34G [00:03<00:12, 96.9MB/s][A
+Downloading model.safetensors:  18%|█▊        | 251M/1.34G [00:03<00:14, 82.6MB/s][A
+Downloading model.safetensors:  19%|█▉        | 265M/1.34G [00:03<00:11, 97.8MB/s][A
+Downloading model.safetensors:  20%|██        | 275M/1.34G [00:04<00:11, 98.1MB/s][A
+Downloading model.safetensors:  20%|██        | 281M/1.34G [00:04<00:14, 77.6MB/s][A
+Downloading model.safetensors:  21%|██        | 290M/1.34G [00:04<00:13, 81.7MB/s][A
+Downloading model.safetensors:  22%|██▏       | 297M/1.34G [00:04<00:15, 70.6MB/s][A
+Downloading model.safetensors:  22%|██▏       | 307M/1.34G [00:04<00:14, 78.6MB/s][A
+Downloading model.safetensors:  23%|██▎       | 312M/1.34G [00:04<00:16, 67.9MB/s][A
+Downloading model.safetensors:  24%|██▎       | 323M/1.34G [00:04<00:13, 79.0MB/s][A
+Downloading model.safetensors:  24%|██▍       | 329M/1.34G [00:04<00:14, 74.6MB/s][A
+Downloading model.safetensors:  25%|██▍       | 341M/1.34G [00:04<00:12, 88.4MB/s][A
+Downloading model.safetensors:  25%|██▌       | 348M/1.34G [00:05<00:13, 82.4MB/s][A
+Downloading model.safetensors:  26%|██▌       | 358M/1.34G [00:05<00:12, 84.4MB/s][A
+Downloading model.safetensors:  27%|██▋       | 374M/1.34G [00:05<00:11, 94.7MB/s][A
+Downloading model.safetensors:  28%|██▊       | 380M/1.34G [00:05<00:12, 86.1MB/s][A
+Downloading model.safetensors:  28%|██▊       | 390M/1.34G [00:05<00:12, 81.5MB/s][A
+Downloading model.safetensors:  29%|██▉       | 403M/1.34G [00:05<00:10, 95.0MB/s][A
+Downloading model.safetensors:  30%|██▉       | 408M/1.34G [00:05<00:12, 82.7MB/s][A
+Downloading model.safetensors:  31%|███       | 420M/1.34G [00:05<00:11, 88.9MB/s][A
+Downloading model.safetensors:  32%|███▏      | 436M/1.34G [00:06<00:09, 99.3MB/s][A
+Downloading model.safetensors:  33%|███▎      | 450M/1.34G [00:06<00:08, 111MB/s] [A
+Downloading model.safetensors:  33%|███▎      | 455M/1.34G [00:06<00:10, 94.5MB/s][A
+Downloading model.safetensors:  34%|███▍      | 466M/1.34G [00:06<00:09, 98.1MB/s][A
+Downloading model.safetensors:  35%|███▍      | 474M/1.34G [00:06<00:10, 92.5MB/s][A
+Downloading model.safetensors:  35%|███▌      | 484M/1.34G [00:06<00:10, 86.1MB/s][A
+Downloading model.safetensors:  36%|███▌      | 492M/1.34G [00:06<00:11, 83.5MB/s][A
+Downloading model.safetensors:  36%|███▌      | 496M/1.34G [00:06<00:14, 64.7MB/s][A
+Downloading model.safetensors:  37%|███▋      | 507M/1.34G [00:06<00:11, 75.6MB/s][A
+Downloading model.safetensors:  37%|███▋      | 512M/1.34G [00:07<00:15, 59.6MB/s][A
+Downloading model.safetensors:  38%|███▊      | 518M/1.34G [00:07<00:15, 59.1MB/s][A
+Downloading model.safetensors:  38%|███▊      | 525M/1.34G [00:07<00:15, 58.2MB/s][A
+Downloading model.safetensors:  39%|███▊      | 529M/1.34G [00:07<00:16, 53.0MB/s][A
+Downloading model.safetensors:  39%|███▉      | 532M/1.34G [00:07<00:20, 42.2MB/s][A
+Downloading model.safetensors:  39%|███▉      | 536M/1.34G [00:07<00:20, 41.8MB/s][A
+Downloading model.safetensors:  39%|███▉      | 539M/1.34G [00:07<00:23, 37.2MB/s][A
+Downloading model.safetensors:  40%|███▉      | 543M/1.34G [00:07<00:23, 37.6MB/s][A
+Downloading model.safetensors:  40%|███▉      | 547M/1.34G [00:08<00:26, 33.1MB/s][A
+Downloading model.safetensors:  40%|████      | 552M/1.34G [00:08<00:23, 36.8MB/s][A
+Downloading model.safetensors:  40%|████      | 555M/1.34G [00:08<00:25, 33.6MB/s][A
+Downloading model.safetensors:  41%|████      | 559M/1.34G [00:08<00:25, 33.9MB/s][A
+Downloading model.safetensors:  41%|████      | 562M/1.34G [00:08<00:29, 29.2MB/s][A
+Downloading model.safetensors:  41%|████      | 565M/1.34G [00:08<00:29, 28.5MB/s][A
+Downloading model.safetensors:  41%|████▏     | 569M/1.34G [00:08<00:26, 31.6MB/s][A
+Downloading model.safetensors:  42%|████▏     | 571M/1.34G [00:08<00:30, 27.5MB/s][A
+Downloading model.safetensors:  42%|████▏     | 581M/1.34G [00:09<00:17, 47.8MB/s][A
+Downloading model.safetensors:  43%|████▎     | 586M/1.34G [00:09<00:17, 47.8MB/s][A
+Downloading model.safetensors:  43%|████▎     | 595M/1.34G [00:09<00:14, 57.4MB/s][A
+Downloading model.safetensors:  44%|████▎     | 600M/1.34G [00:09<00:14, 55.6MB/s][A
+Downloading model.safetensors:  45%|████▍     | 613M/1.34G [00:09<00:12, 66.0MB/s][A
+Downloading model.safetensors:  45%|████▌     | 624M/1.34G [00:09<00:10, 77.8MB/s][A
+Downloading model.safetensors:  46%|████▌     | 629M/1.34G [00:09<00:11, 66.0MB/s][A
+Downloading model.safetensors:  47%|████▋     | 642M/1.34G [00:09<00:09, 84.1MB/s][A
+Downloading model.safetensors:  47%|████▋     | 647M/1.34G [00:09<00:10, 74.3MB/s][A
+Downloading model.safetensors:  48%|████▊     | 657M/1.34G [00:10<00:09, 75.8MB/s][A
+Downloading model.safetensors:  49%|████▉     | 671M/1.34G [00:10<00:07, 93.6MB/s][A
+Downloading model.safetensors:  49%|████▉     | 678M/1.34G [00:10<00:08, 86.0MB/s][A
+Downloading model.safetensors:  50%|█████     | 687M/1.34G [00:10<00:08, 85.6MB/s][A
+Downloading model.safetensors:  50%|█████     | 690M/1.34G [00:10<00:10, 69.7MB/s][A
+Downloading model.safetensors:  51%|█████▏    | 704M/1.34G [00:10<00:08, 78.1MB/s][A
+Downloading model.safetensors:  52%|█████▏    | 715M/1.34G [00:10<00:07, 87.2MB/s][A
+Downloading model.safetensors:  52%|█████▏    | 719M/1.34G [00:10<00:09, 73.9MB/s][A
+Downloading model.safetensors:  53%|█████▎    | 729M/1.34G [00:11<00:08, 81.0MB/s][A
+Downloading model.safetensors:  54%|█████▎    | 735M/1.34G [00:11<00:08, 75.7MB/s][A
+Downloading model.safetensors:  54%|█████▍    | 747M/1.34G [00:11<00:07, 89.4MB/s][A
+Downloading model.safetensors:  55%|█████▍    | 752M/1.34G [00:11<00:08, 78.7MB/s][A
+Downloading model.safetensors:  56%|█████▌    | 764M/1.34G [00:11<00:07, 81.9MB/s][A
+Downloading model.safetensors:  57%|█████▋    | 778M/1.34G [00:11<00:06, 99.3MB/s][A
+Downloading model.safetensors:  57%|█████▋    | 783M/1.34G [00:11<00:07, 85.8MB/s][A
+Downloading model.safetensors:  58%|█████▊    | 794M/1.34G [00:11<00:06, 93.2MB/s][A
+Downloading model.safetensors:  58%|█████▊    | 800M/1.34G [00:11<00:07, 84.1MB/s][A
+Downloading model.safetensors:  59%|█████▉    | 810M/1.34G [00:12<00:07, 77.8MB/s][A
+Downloading model.safetensors:  60%|█████▉    | 821M/1.34G [00:12<00:06, 85.6MB/s][A
+Downloading model.safetensors:  60%|██████    | 828M/1.34G [00:12<00:07, 80.7MB/s][A
+Downloading model.safetensors:  61%|██████    | 838M/1.34G [00:12<00:06, 86.7MB/s][A
+Downloading model.safetensors:  62%|██████▏   | 847M/1.34G [00:12<00:06, 87.2MB/s][A
+Downloading model.safetensors:  63%|██████▎   | 858M/1.34G [00:12<00:05, 90.2MB/s][A
+Downloading model.safetensors:  63%|██████▎   | 868M/1.34G [00:12<00:05, 92.6MB/s][A
+Downloading model.safetensors:  64%|██████▎   | 873M/1.34G [00:12<00:06, 80.5MB/s][A
+Downloading model.safetensors:  64%|██████▍   | 885M/1.34G [00:12<00:05, 92.1MB/s][A
+Downloading model.safetensors:  65%|██████▌   | 892M/1.34G [00:13<00:05, 85.4MB/s][A
+Downloading model.safetensors:  66%|██████▌   | 904M/1.34G [00:13<00:05, 87.8MB/s][A
+Downloading model.safetensors:  66%|██████▋   | 912M/1.34G [00:13<00:05, 84.9MB/s][A
+Downloading model.safetensors:  67%|██████▋   | 916M/1.34G [00:13<00:07, 61.1MB/s][A
+Downloading model.safetensors:  67%|██████▋   | 918M/1.34G [00:13<00:09, 49.4MB/s][A
+Downloading model.safetensors:  67%|██████▋   | 922M/1.34G [00:13<00:09, 47.3MB/s][A
+Downloading model.safetensors:  68%|██████▊   | 931M/1.34G [00:13<00:07, 59.0MB/s][A
+Downloading model.safetensors:  68%|██████▊   | 936M/1.34G [00:13<00:08, 56.7MB/s][A
+Downloading model.safetensors:  69%|██████▉   | 949M/1.34G [00:13<00:06, 72.7MB/s][A
+Downloading model.safetensors:  70%|███████   | 965M/1.34G [00:14<00:04, 86.7MB/s][A
+Downloading model.safetensors:  71%|███████▏  | 981M/1.34G [00:14<00:04, 94.3MB/s][A
+Downloading model.safetensors:  72%|███████▏  | 994M/1.34G [00:14<00:03, 103MB/s] [A
+Downloading model.safetensors:  73%|███████▎  | 0.98G/1.34G [00:14<00:03, 99.6MB/s][A
+Downloading model.safetensors:  74%|███████▎  | 0.99G/1.34G [00:14<00:03, 94.8MB/s][A
+Downloading model.safetensors:  75%|███████▍  | 1.00G/1.34G [00:14<00:03, 103MB/s] [A
+Downloading model.safetensors:  75%|███████▌  | 1.01G/1.34G [00:14<00:03, 93.6MB/s][A
+Downloading model.safetensors:  76%|███████▌  | 1.02G/1.34G [00:14<00:03, 92.2MB/s][A
+Downloading model.safetensors:  77%|███████▋  | 1.03G/1.34G [00:15<00:03, 102MB/s] [A
+Downloading model.safetensors:  77%|███████▋  | 1.03G/1.34G [00:15<00:04, 73.2MB/s][A
+Downloading model.safetensors:  78%|███████▊  | 1.04G/1.34G [00:15<00:04, 74.9MB/s][A
+Downloading model.safetensors:  78%|███████▊  | 1.05G/1.34G [00:15<00:05, 62.2MB/s][A
+Downloading model.safetensors:  79%|███████▉  | 1.06G/1.34G [00:15<00:04, 72.4MB/s][A
+Downloading model.safetensors:  79%|███████▉  | 1.06G/1.34G [00:15<00:04, 69.5MB/s][A
+Downloading model.safetensors:  80%|███████▉  | 1.07G/1.34G [00:15<00:03, 74.6MB/s][A
+Downloading model.safetensors:  80%|████████  | 1.08G/1.34G [00:15<00:03, 71.2MB/s][A
+Downloading model.safetensors:  81%|████████▏ | 1.09G/1.34G [00:16<00:03, 83.5MB/s][A
+Downloading model.safetensors:  82%|████████▏ | 1.10G/1.34G [00:16<00:02, 94.0MB/s][A
+Downloading model.safetensors:  83%|████████▎ | 1.11G/1.34G [00:16<00:02, 85.5MB/s][A
+Downloading model.safetensors:  84%|████████▎ | 1.12G/1.34G [00:16<00:02, 96.3MB/s][A
+Downloading model.safetensors:  84%|████████▍ | 1.13G/1.34G [00:16<00:02, 88.7MB/s][A
+Downloading model.safetensors:  85%|████████▍ | 1.14G/1.34G [00:16<00:02, 86.9MB/s][A
+Downloading model.safetensors:  85%|████████▍ | 1.14G/1.34G [00:16<00:03, 64.0MB/s][A
+Downloading model.safetensors:  86%|████████▌ | 1.15G/1.34G [00:16<00:02, 83.4MB/s][A
+Downloading model.safetensors:  86%|████████▋ | 1.16G/1.34G [00:16<00:02, 85.1MB/s][A
+Downloading model.safetensors:  87%|████████▋ | 1.17G/1.34G [00:16<00:02, 86.3MB/s][A
+Downloading model.safetensors:  88%|████████▊ | 1.18G/1.34G [00:17<00:01, 102MB/s] [A
+Downloading model.safetensors:  89%|████████▊ | 1.19G/1.34G [00:17<00:01, 93.1MB/s][A
+Downloading model.safetensors:  89%|████████▉ | 1.20G/1.34G [00:17<00:01, 85.0MB/s][A
+Downloading model.safetensors:  90%|█████████ | 1.21G/1.34G [00:17<00:01, 97.7MB/s][A
+Downloading model.safetensors:  91%|█████████ | 1.22G/1.34G [00:17<00:01, 101MB/s] [A
+Downloading model.safetensors:  92%|█████████▏| 1.23G/1.34G [00:17<00:01, 92.1MB/s][A
+Downloading model.safetensors:  92%|█████████▏| 1.24G/1.34G [00:17<00:01, 101MB/s] [A
+Downloading model.safetensors:  93%|█████████▎| 1.25G/1.34G [00:17<00:01, 91.4MB/s][A
+Downloading model.safetensors:  94%|█████████▍| 1.26G/1.34G [00:17<00:00, 93.1MB/s][A
+Downloading model.safetensors:  95%|█████████▍| 1.27G/1.34G [00:18<00:00, 98.7MB/s][A
+Downloading model.safetensors:  95%|█████████▌| 1.28G/1.34G [00:18<00:00, 92.7MB/s][A
+Downloading model.safetensors:  96%|█████████▌| 1.29G/1.34G [00:18<00:00, 91.6MB/s][A
+Downloading model.safetensors:  97%|█████████▋| 1.30G/1.34G [00:18<00:00, 103MB/s] [A
+Downloading model.safetensors:  98%|█████████▊| 1.31G/1.34G [00:18<00:00, 95.0MB/s][A
+Downloading model.safetensors:  98%|█████████▊| 1.32G/1.34G [00:18<00:00, 91.3MB/s][A
+Downloading model.safetensors:  99%|█████████▉| 1.33G/1.34G [00:18<00:00, 93.8MB/s][A
+Downloading model.safetensors:  99%|█████████▉| 1.33G/1.34G [00:18<00:00, 75.4MB/s][ADownloading model.safetensors: 100%|██████████| 1.34G/1.34G [00:18<00:00, 75.9MB/s]
+Downloading text_recognition model to /home/runner/.cache/datalab/models/text_recognition/2025_09_23: 100%|██████████| 12/12 [00:19<00:00,  1.65s/it]Downloading text_recognition model to /home/runner/.cache/datalab/models/text_recognition/2025_09_23: 100%|██████████| 12/12 [00:19<00:00,  1.62s/it]
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 29, in ocr_text_cli
+    foundation_predictor = FoundationPredictor()
+                           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/__init__.py", line 113, in __init__
+    super().__init__(checkpoint, device, dtype, attention_implementation)
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/predictor.py", line 37, in __init__
+    self.model = loader.model(device, dtype, attention_implementation)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/foundation/loader.py", line 69, in model
+    model = model_cls.from_pretrained(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/s3.py", line 182, in from_pretrained
+    return super().from_pretrained(local_path, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/modeling_utils.py", line 4412, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/__init__.py", line 123, in __init__
+    decoder = SuryaDecoderModel(config.decoder)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/common/surya/decoder/__init__.py", line 447, in __init__
+    self.padding_idx = config.pad_token_id
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/configuration_utils.py", line 464, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/transformers/integrations/heterogeneity/configuration_utils.py", line 280, in __getattribute__
+    return super().__getattribute__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'SuryaDecoderConfig' object has no attribute 'pad_token_id'

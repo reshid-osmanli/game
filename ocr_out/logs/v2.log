@@ -18,16 +18,15 @@ Options:
 ==== v2 [2/5] ensure pdf + render ====
 Downloading...
 From (original): https://drive.google.com/uc?id=1k9Q7moUs8LBkMp4g6fTa5pxBXs7c4D72
-From (redirected): https://drive.google.com/uc?id=1k9Q7moUs8LBkMp4g6fTa5pxBXs7c4D72&confirm=t&uuid=8e0d3a7c-34d6-4c62-b8f9-75f566b08e77
+From (redirected): https://drive.google.com/uc?id=1k9Q7moUs8LBkMp4g6fTa5pxBXs7c4D72&confirm=t&uuid=6bfed4aa-f856-4ef9-9e3e-ccc3d711c380
 To: /home/runner/work/game/game/work/book.pdf
-  0%|          | 0.00/137M [00:00<?, ?B/s]  0%|          | 524k/137M [00:00<00:31, 4.39MB/s]  3%|▎         | 3.67M/137M [00:00<00:07, 18.4MB/s]  7%|▋         | 8.91M/137M [00:00<00:05, 22.4MB/s] 10%|▉         | 13.1M/137M [00:00<00:05, 23.5MB/s] 11%|█▏        | 15.7M/137M [00:00<00:05, 24.0MB/s] 14%|█▍        | 19.4M/137M [00:00<00:05, 21.5MB/s] 17%|█▋        | 23.6M/137M [00:01<00:05, 20.6MB/s] 22%|██▏       | 29.9M/137M [00:01<00:04, 24.8MB/s] 26%|██▋       | 36.2M/137M [00:01<00:03, 29.6MB/s] 31%|███       | 42.5M/137M [00:01<00:03, 30.4MB/s] 36%|███▌      | 48.8M/137M [00:01<00:02, 34.3MB/s] 42%|████▏     | 57.1M/137M [00:01<00:01, 40.8MB/s] 46%|████▋     | 63.4M/137M [00:02<00:01, 45.2MB/s] 51%|█████     | 69.7M/137M [00:02<00:01, 44.7MB/s] 57%|█████▋    | 78.1M/137M [00:02<00:01, 49.1MB/s] 65%|██████▍   | 88.6M/137M [00:02<00:00, 50.0MB/s] 72%|███████▏  | 99.1M/137M [00:02<00:00, 57.3MB/s] 80%|████████  | 110M/137M [00:02<00:00, 62.3MB/s]  86%|████████▌ | 118M/137M [00:02<00:00, 66.7MB/s] 92%|█████████▏| 125M/137M [00:03<00:00, 65.4MB/s] 98%|█████████▊| 135M/137M [00:03<00:00, 62.7MB/s]100%|██████████| 137M/137M [00:03<00:00, 42.5MB/s]
+  0%|          | 0.00/137M [00:00<?, ?B/s]  0%|          | 524k/137M [00:00<00:27, 4.96MB/s]  3%|▎         | 4.72M/137M [00:00<00:05, 22.4MB/s]  8%|▊         | 11.0M/137M [00:00<00:04, 29.0MB/s] 11%|█         | 15.2M/137M [00:00<00:03, 31.0MB/s] 13%|█▎        | 18.4M/137M [00:00<00:04, 26.1MB/s] 16%|█▌        | 22.0M/137M [00:00<00:03, 28.8MB/s] 18%|█▊        | 25.2M/137M [00:00<00:04, 26.6MB/s] 22%|██▏       | 29.9M/137M [00:01<00:04, 25.0MB/s] 25%|██▍       | 34.1M/137M [00:01<00:03, 28.4MB/s] 27%|██▋       | 37.2M/137M [00:01<00:03, 27.5MB/s] 33%|███▎      | 44.6M/137M [00:01<00:03, 30.5MB/s] 36%|███▌      | 48.8M/137M [00:01<00:03, 26.9MB/s] 42%|████▏     | 57.1M/137M [00:02<00:02, 29.2MB/s] 48%|████▊     | 65.5M/137M [00:02<00:02, 27.4MB/s] 56%|█████▌    | 76.0M/137M [00:02<00:01, 34.9MB/s] 60%|██████    | 82.3M/137M [00:02<00:01, 38.9MB/s] 64%|██████▎   | 87.0M/137M [00:02<00:01, 39.2MB/s] 67%|██████▋   | 91.8M/137M [00:02<00:01, 39.7MB/s] 71%|███████   | 96.5M/137M [00:03<00:00, 40.9MB/s] 74%|███████▍  | 101M/137M [00:03<00:01, 34.7MB/s]  79%|███████▊  | 107M/137M [00:03<00:00, 35.4MB/s] 82%|████████▏ | 112M/137M [00:03<00:00, 31.4MB/s] 88%|████████▊ | 121M/137M [00:03<00:00, 43.2MB/s] 92%|█████████▏| 126M/137M [00:03<00:00, 34.9MB/s] 98%|█████████▊| 135M/137M [00:04<00:00, 39.4MB/s]100%|██████████| 137M/137M [00:04<00:00, 33.5MB/s]
 pages: 242
 ==== v2 [3/5] compare samples pages 1-6 ====
 surya sample CLI failed
 [norm] json files in work/surya_sample: 0
 [norm] wrote 0 shards to ocr_out/surya_pages
-To https://github.com/reshid-osmanli/game
-   f3ceda6..40eae91  HEAD -> arena/019fb85f-game
+Everything up-to-date
 ==== v2 [3b] optional Qari sample (pages 1,5; timeboxed) ====
 qari phase disabled (enable by adding ocr/ENABLE_QARI)
 ==== v2 [4/5] full surya (chunked, resumable) ====
@@ -95,6 +94,6 @@ chunk at 241 failed
 [assemble] 0 pages -> ocr_out/book_surya.txt; missing pages so far: []
 0 ocr_out/book_surya.txt
 To https://github.com/reshid-osmanli/game
-   40eae91..520c360  HEAD -> arena/019fb85f-game
+   32bc6c6..b6f0faa  HEAD -> arena/019fb85f-game
 V2 ALL DONE
 [exit handler] exit code = 0
