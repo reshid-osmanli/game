@@ -35,7 +35,7 @@ push_checkpoint() {
 [ -f ocr/DISABLE_V2 ] && { echo "v2 disabled"; exit 0; }
 
 echo "==== v2 [1/5] deps ===="
-pip install --quiet "surya-ocr" "transformers>=4.45" "accelerate" "qwen-vl-utils" 2>&1 | tail -3
+pip install --quiet "surya-ocr<0.20" 2>&1 | tail -3
 pip show surya-ocr 2>/dev/null | head -3 || true
 ( surya_ocr --help 2>&1 || true ) | tee ocr_out/logs/surya_help.txt | head -40
 
@@ -69,11 +69,12 @@ echo "pages: $TOTAL"
 [ "$TOTAL" -gt 0 ] || { echo "RENDER FAILED"; exit 1; }
 
 surya_run() {
-  # $1 = outdir, $2 = page range (0-based, e.g. "0-5"); one VLM server kept warm across calls
-  out="$1"; range="$2"
+  # $1 = outdir, rest = image paths; classic surya (<0.20) = pure torch pipeline
+  out="$1"; shift
   mkdir -p "$out"
-  surya_ocr --keep_server --output_dir "$out" --page_range "$range" work/book.pdf >> work/v2_surya.log 2>&1 && return 0
-  surya_ocr --output_dir "$out" --page_range "$range" work/book.pdf >> work/v2_surya.log 2>&1 && return 0
+  surya_ocr --output_dir "$out" "$@" >> work/v2_surya.log 2>&1 && return 0
+  surya_ocr "$@" --output_dir "$out" >> work/v2_surya.log 2>&1 && return 0
+  surya_ocr "$@" >> work/v2_surya.log 2>&1 && return 0
   return 1
 }
 
@@ -83,7 +84,7 @@ for f in "${IMGS[@]:0:6}"; do
   tesseract "$f" stdout -l ara --psm 3 2>/dev/null > "ocr_out/compare/${b}.tess.txt" || true
 done
 rm -rf work/surya_sample
-surya_run work/surya_sample "0-5" || echo "surya sample CLI failed"
+surya_run work/surya_sample "${IMGS[@]:0:6}" || echo "surya sample CLI failed"
 SAMPLE_JSON=$(find work/surya_sample -name "*.json" | head -1)
 [ -n "$SAMPLE_JSON" ] && head -c 4000 "$SAMPLE_JSON" > ocr_out/compare/sample_raw.json.txt
 python3 ocr/surya_norm.py work/surya_sample ocr_out/surya_pages || true
@@ -94,14 +95,17 @@ done
 push_checkpoint "ocr v2: compare samples ready (pages 1-6)"
 
 echo "==== v2 [3b] optional Qari sample (pages 1,5; timeboxed) ===="
-timeout 1500 python3 ocr/qari_pages.py work/pages/p-001.png work/pages/p-005.png ocr_out/compare || echo "qari skipped/failed (non-fatal)"
-push_checkpoint "ocr v2: qari sample phase done"
+if [ -f ocr/ENABLE_QARI ]; then
+  pip install --quiet "transformers>=4.45" "accelerate" "qwen-vl-utils" 2>&1 | tail -1
+  timeout 1500 python3 ocr/qari_pages.py work/pages/p-001.png work/pages/p-005.png ocr_out/compare || echo "qari skipped/failed (non-fatal)"
+  push_checkpoint "ocr v2: qari sample phase done"
+else
+  echo "qari phase disabled (enable by adding ocr/ENABLE_QARI)"
+fi
 
 echo "==== v2 [4/5] full surya (chunked, resumable) ===="
-# one range covering remaining pages; shards let us skip completed ones on resume
-END=$((TOTAL-1))
 for ((i=0; i<TOTAL; i+=CH)); do
-  j=$((i+CH-1)); [ $j -gt $END ] && j=$END
+  j=$((i+CH-1)); [ $j -gt $((TOTAL-1)) ] && j=$((TOTAL-1))
   need=0
   for ((k=i; k<=j; k++)); do
     [ -s "$(printf 'ocr_out/surya_pages/p-%03d.txt' $((k+1)))" ] || need=1
@@ -109,7 +113,7 @@ for ((i=0; i<TOTAL; i+=CH)); do
   if [ "$need" = 0 ]; then echo "chunk pages $((i+1))-$((j+1)) already done"; continue; fi
   echo "--- surya chunk pages $((i+1))-$((j+1)) / $TOTAL ---"
   rm -rf work/surya_chunk; mkdir -p work/surya_chunk
-  surya_run work/surya_chunk "${i}-${j}" || echo "chunk ${i}-${j} failed"
+  surya_run work/surya_chunk "${IMGS[@]:i:CH}" || echo "chunk at $((i+1)) failed"
   python3 ocr/surya_norm.py work/surya_chunk ocr_out/surya_pages || true
   if (( (i/CH) % 3 == 2 )); then
     python3 ocr/surya_norm.py --assemble ocr_out/surya_pages ocr_out/book_surya.partial.txt || true
