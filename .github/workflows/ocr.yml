@@ -1,0 +1,54 @@
+name: ocr-book
+
+on:
+  push:
+    branches:
+      - arena/019fb85f-game
+    paths:
+      - 'ocr/**'
+      - '.github/workflows/ocr.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ocr-book
+  cancel-in-progress: true
+
+jobs:
+  ocr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      OMP_THREAD_LIMIT: "1"
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: arena/019fb85f-game
+
+      - name: Install system deps
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y --no-install-recommends poppler-utils tesseract-ocr qpdf
+
+      - name: Install python deps + best Arabic traineddata
+        run: |
+          pip install --quiet gdown
+          mkdir -p "$HOME/tessdata"
+          curl -L --retry 3 -o "$HOME/tessdata/ara.traineddata" \
+            https://github.com/tesseract-ocr/tessdata_best/raw/main/ara.traineddata
+          TESSSYS=$(dirname "$(find /usr/share/tesseract-ocr -name 'eng.traineddata' | head -1)")
+          echo "system tessdata dir: $TESSSYS"
+          sudo cp "$HOME/tessdata/ara.traineddata" "$TESSSYS/ara.traineddata"
+          ls -la "$TESSSYS"
+
+      - name: Run OCR pipeline
+        run: bash ocr/run.sh
+
+      - name: Upload results artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ocr-results
+          path: ocr_out/
+          retention-days: 7
