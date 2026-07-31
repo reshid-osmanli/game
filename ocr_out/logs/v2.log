@@ -1,0 +1,46 @@
+==== v2 [1/5] deps ====
+Name: surya-ocr
+Version: 0.22.1
+Summary: OCR, layout, reading order, and table recognition in 90+ languages.
+Usage: surya_ocr [OPTIONS] INPUT_PATH
+
+  OCR text — full-page OCR (one VLM call per page).
+
+Options:
+  --keep_server      Keep the inference server (vllm/llama.cpp) running after
+                     this command exits so later commands reuse it instead of
+                     re-spawning.
+  -d, --debug        Enable debug mode.
+  --images           Save images of detected bboxes.
+  --page_range TEXT  Page range to convert, specify comma separated page
+                     numbers or ranges.  Example: 0,5-10,20
+  --output_dir PATH  Directory to save output.
+  --help             Show this message and exit.
+==== v2 [2/5] ensure pdf + render ====
+usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
+             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
+             [--json] [--format FORMAT] [--user-agent USER_AGENT]
+             url_or_id
+gdown: error: unrecognized arguments: --fuzzy
+usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
+             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
+             [--json] [--format FORMAT] [--user-agent USER_AGENT]
+             url_or_id
+gdown: error: unrecognized arguments: --fuzzy
+usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
+             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
+             [--json] [--format FORMAT] [--user-agent USER_AGENT]
+             url_or_id
+gdown: error: unrecognized arguments: --fuzzy
+usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
+             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
+             [--json] [--format FORMAT] [--user-agent USER_AGENT]
+             url_or_id
+gdown: error: unrecognized arguments: --fuzzy
+usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
+             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
+             [--json] [--format FORMAT] [--user-agent USER_AGENT]
+             url_or_id
+gdown: error: unrecognized arguments: --fuzzy
+NO PDF
+[exit handler] exit code = 1
