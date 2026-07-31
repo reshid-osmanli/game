@@ -7,17 +7,58 @@ BRANCH="arena/019fb85f-game"
 CHUNK=100
 
 cd "$(git rev-parse --show-toplevel)"
-mkdir -p work/pages work/txt ocr_out/samples
+mkdir -p work/pages work/txt ocr_out/samples ocr_out/logs
+
+git config user.name "arena-ocr-bot"
+git config user.email "arena-ocr-bot@users.noreply.github.com"
+
+exec > >(tee work/pipeline.log) 2>&1
+
+on_exit() {
+  code=$?
+  echo "[exit handler] exit code = $code"
+  cp work/pipeline.log ocr_out/logs/ 2>/dev/null || true
+  git add ocr_out/ 2>/dev/null
+  git commit -m "ocr: run ended (exit=$code)" >/dev/null 2>&1 || true
+  git push origin "HEAD:${BRANCH}" >/dev/null 2>&1 || true
+}
+trap on_exit EXIT
+
+push_checkpoint() {
+  msg="$1"
+  git add ocr_out/ && git commit -m "$msg" >/dev/null 2>&1 || true
+  git fetch origin "${BRANCH}" >/dev/null 2>&1 || true
+  git rebase "origin/${BRANCH}" >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
+  git push origin "HEAD:${BRANCH}" || true
+}
 
 echo "==== [1/6] Download ===="
-cd work
-for attempt in 1 2 3; do
-  gdown --fuzzy "https://drive.google.com/file/d/${FILE_ID}/view?usp=sharing" -O book.pdf && break
-  echo "gdown attempt $attempt failed, retrying in 10s"; sleep 10
+URL_VIEW="https://drive.google.com/file/d/${FILE_ID}/view?usp=sharing"
+DL_OK=0
+for attempt in 1 2 3 4 5; do
+  echo "--- gdown attempt $attempt ---"
+  gdown --fuzzy "$URL_VIEW" -O work/book.pdf && [ -s work/book.pdf ] && DL_OK=1 && break
+  sleep 15
 done
-[ -s book.pdf ] || { echo "DOWNLOAD FAILED"; exit 1; }
-ls -la book.pdf
-cd ..
+if [ "$DL_OK" = 0 ]; then
+  echo "--- curl uuid fallback ---"
+  for attempt in 1 2 3; do
+    rm -f /tmp/ck.txt /tmp/pg.html
+    curl -sL -c /tmp/ck.txt "https://drive.usercontent.google.com/download?id=${FILE_ID}&export=download" -o /tmp/pg.html || true
+    uuid=$(sed -n 's/.*name="uuid" value="\([^"]*\)".*/\1/p' /tmp/pg.html | head -1)
+    echo "uuid found: '${uuid}'"
+    if [ -n "$uuid" ]; then
+      curl -L -b /tmp/ck.txt -o work/book.pdf \
+        "https://drive.usercontent.google.com/download?id=${FILE_ID}&export=download&confirm=t&uuid=${uuid}" \
+        && [ -s work/book.pdf ] && DL_OK=1 && break
+    fi
+    sleep 15
+  done
+fi
+echo "DL_OK=$DL_OK"
+ls -la work/book.pdf 2>/dev/null || true
+head -c 1024 work/book.pdf 2>/dev/null | grep -q "%PDF" && echo "PDF header OK" || echo "WARNING: no PDF header!"
+[ "$DL_OK" = 1 ] && [ -s work/book.pdf ] || { echo "DOWNLOAD FAILED"; exit 1; }
 
 echo "==== [2/6] Info + embedded text check ===="
 pdfinfo work/book.pdf | tee ocr_out/pdfinfo.txt
@@ -26,6 +67,10 @@ echo "Total pages: $N"
 pdftotext work/book.pdf ocr_out/embedded_text.txt 2>/dev/null || true
 EMB_CHARS=$(wc -c < ocr_out/embedded_text.txt 2>/dev/null || echo 0)
 echo "Embedded text chars: $EMB_CHARS"
+
+push_checkpoint "ocr: downloaded (pages=${N}, embedded_chars=${EMB_CHARS})"
+
+if [ -z "$N" ] || [ "$N" -le 0 ] 2>/dev/null; then echo "No pages found"; exit 1; fi
 
 echo "==== [3/6] Sample renders + quick sample OCR ===="
 pdftoppm -f 1 -l 3 -r 100 -jpeg -gray work/book.pdf ocr_out/samples/page || true
@@ -36,22 +81,17 @@ for f in work/sample_hi/s-*.png; do
   tesseract "$f" "ocr_out/samples/${b}" -l ara --psm 3 2>/dev/null || true
 done
 ls -la ocr_out/samples/ || true
-
-git config user.name "arena-ocr-bot"
-git config user.email "arena-ocr-bot@users.noreply.github.com"
-git add ocr_out/ && git commit -m "ocr: start run (pages=${N}, embedded_chars=${EMB_CHARS})" >/dev/null 2>&1 || true
-git push origin "HEAD:${BRANCH}" || true
-
-if [ "$N" -le 0 ] 2>/dev/null; then echo "No pages found"; exit 1; fi
+push_checkpoint "ocr: samples ready"
 
 echo "==== [4/6] Render all pages (300dpi gray) ===="
 pdftoppm -r 300 -gray -png work/book.pdf work/pages/p
 mapfile -t IMGS < <(ls work/pages/p-*.png | sort)
 TOTAL=${#IMGS[@]}
 echo "Rendered: $TOTAL pages"
+[ "$TOTAL" -gt 0 ] || { echo "RENDER FAILED"; exit 1; }
+push_checkpoint "ocr: rendered ${TOTAL} pages"
 
 echo "==== [5/6] OCR (tesseract ara, tessdata_best) ===="
-unset TESSDATA_PREFIX
 ocr_one() {
   f="$1"
   b=$(basename "$f" .png)
@@ -76,10 +116,7 @@ for ((i=0; i<TOTAL; i+=CHUNK)); do
   DONE=$(ls work/txt/ 2>/dev/null | wc -l)
   echo "OCR done for $DONE/$TOTAL pages"
   assemble ocr_out/book.partial.txt
-  git add ocr_out/ && git commit -m "ocr: progress ${DONE}/${TOTAL}" >/dev/null 2>&1 || true
-  git fetch origin "${BRANCH}" >/dev/null 2>&1 || true
-  git rebase "origin/${BRANCH}" >/dev/null 2>&1 || git rebase --abort >/dev/null 2>&1 || true
-  git push origin "HEAD:${BRANCH}" || true
+  push_checkpoint "ocr: progress ${DONE}/${TOTAL}"
 done
 
 echo "==== [6/6] Final assemble ===="
@@ -91,7 +128,5 @@ wc -c ocr_out/book.txt
   echo "pages: ${TOTAL}"
   echo "date: $(date -u +%FT%TZ)"
 } > ocr_out/DONE.txt
-git add ocr_out/
-git commit -m "ocr: complete ${TOTAL}/${TOTAL}" >/dev/null 2>&1 || true
-git push origin "HEAD:${BRANCH}" || true
+wc -c ocr_out/book.txt
 echo "ALL DONE"
