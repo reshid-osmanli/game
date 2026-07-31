@@ -1,11 +1,10 @@
 Usage: surya_ocr [OPTIONS] INPUT_PATH
 
-  OCR text — full-page OCR (one VLM call per page).
+  OCR text.
 
 Options:
-  --keep_server      Keep the inference server (vllm/llama.cpp) running after
-                     this command exits so later commands reuse it instead of
-                     re-spawning.
+  --task_name TEXT
+  --disable_math     Do not recognize math in OCR.
   -d, --debug        Enable debug mode.
   --images           Save images of detected bboxes.
   --page_range TEXT  Page range to convert, specify comma separated page
