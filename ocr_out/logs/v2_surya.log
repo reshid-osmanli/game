@@ -1,0 +1,1120 @@
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.
+Traceback (most recent call last):
+  File "/home/runner/.local/bin/surya_ocr", line 8, in <module>
+    sys.exit(ocr_text_cli())
+             ^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1569, in __call__
+    return self.main(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1490, in main
+    rv = self.invoke(ctx)
+         ^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 1353, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/click/core.py", line 907, in invoke
+    return callback(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/scripts/ocr_text.py", line 28, in ocr_text_cli
+    page_results = rec_predictor(loader.highres_images, full_page=True)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 169, in __call__
+    return self._full_page_ocr(images, fallback_layout=layout_results)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/recognition/__init__.py", line 347, in _full_page_ocr
+    out_by_page = {o.metadata["page_idx"]: o for o in manager.generate(batch)}
+                                                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/__init__.py", line 102, in generate
+    return self.backend.generate(batch)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 207, in generate
+    self.start()
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 103, in start
+    binary = _resolve_llama_server_binary()
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/.local/lib/python3.12/site-packages/surya/inference/backends/llamacpp.py", line 40, in _resolve_llama_server_binary
+    raise SpawnError(
+surya.inference.backends.spawn.SpawnError: llama-server binary not found. Install with:
+  macOS:  brew install llama.cpp
+  Linux:  brew install llama.cpp  OR download from
+          https://github.com/ggml-org/llama.cpp/releases
+Or set LLAMA_CPP_BINARY in your env to the binary path.

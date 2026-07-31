@@ -17,30 +17,89 @@ Options:
   --output_dir PATH  Directory to save output.
   --help             Show this message and exit.
 ==== v2 [2/5] ensure pdf + render ====
-usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
-             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
-             [--json] [--format FORMAT] [--user-agent USER_AGENT]
-             url_or_id
-gdown: error: unrecognized arguments: --fuzzy
-usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
-             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
-             [--json] [--format FORMAT] [--user-agent USER_AGENT]
-             url_or_id
-gdown: error: unrecognized arguments: --fuzzy
-usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
-             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
-             [--json] [--format FORMAT] [--user-agent USER_AGENT]
-             url_or_id
-gdown: error: unrecognized arguments: --fuzzy
-usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
-             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
-             [--json] [--format FORMAT] [--user-agent USER_AGENT]
-             url_or_id
-gdown: error: unrecognized arguments: --fuzzy
-usage: gdown [-h] [-V] [-O OUTPUT] [-q] [--proxy PROXY] [--speed SPEED]
-             [--no-cookies] [--no-check-certificate] [--continue] [--folder]
-             [--json] [--format FORMAT] [--user-agent USER_AGENT]
-             url_or_id
-gdown: error: unrecognized arguments: --fuzzy
-NO PDF
-[exit handler] exit code = 1
+Downloading...
+From (original): https://drive.google.com/uc?id=1k9Q7moUs8LBkMp4g6fTa5pxBXs7c4D72
+From (redirected): https://drive.google.com/uc?id=1k9Q7moUs8LBkMp4g6fTa5pxBXs7c4D72&confirm=t&uuid=24159404-db5a-431e-80c2-04f50ea22c1e
+To: /home/runner/work/game/game/work/book.pdf
+  0%|          | 0.00/137M [00:00<?, ?B/s]  3%|▎         | 4.72M/137M [00:00<00:05, 26.0MB/s]  5%|▌         | 7.34M/137M [00:00<00:05, 25.4MB/s] 17%|█▋        | 23.6M/137M [00:00<00:01, 61.7MB/s] 26%|██▌       | 35.7M/137M [00:00<00:01, 79.3MB/s] 32%|███▏      | 44.0M/137M [00:00<00:01, 69.2MB/s] 39%|███▊      | 53.0M/137M [00:00<00:01, 67.3MB/s] 48%|████▊     | 65.5M/137M [00:00<00:00, 73.8MB/s] 54%|█████▎    | 73.4M/137M [00:01<00:00, 74.1MB/s] 62%|██████▏   | 84.4M/137M [00:01<00:00, 59.0MB/s] 72%|███████▏  | 99.1M/137M [00:01<00:00, 51.1MB/s] 84%|████████▍ | 115M/137M [00:01<00:00, 68.1MB/s]  90%|█████████ | 124M/137M [00:01<00:00, 62.1MB/s]100%|██████████| 137M/137M [00:02<00:00, 65.8MB/s]
+pages: 242
+==== v2 [3/5] compare samples pages 1-6 ====
+surya sample CLI failed
+[norm] json files in work/surya_sample: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+To https://github.com/reshid-osmanli/game
+   dca6aad..a547b41  HEAD -> arena/019fb85f-game
+==== v2 [3b] optional Qari sample (pages 1,5; timeboxed) ====
+[qari] loading omerxai/Qari-OCR-v0.3
+[qari] aborted: omerxai/Qari-OCR-v0.3 is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `hf auth login` or by passing `token=<your_token>`
+Everything up-to-date
+==== v2 [4/5] full surya (chunked, resumable) ====
+--- surya chunk pages 1-20 / 242 ---
+chunk 0-19 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+--- surya chunk pages 21-40 / 242 ---
+chunk 20-39 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+--- surya chunk pages 41-60 / 242 ---
+chunk 40-59 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+[assemble] 0 pages -> ocr_out/book_surya.partial.txt; missing pages so far: []
+To https://github.com/reshid-osmanli/game
+   a547b41..3956a93  HEAD -> arena/019fb85f-game
+--- surya chunk pages 61-80 / 242 ---
+chunk 60-79 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+--- surya chunk pages 81-100 / 242 ---
+chunk 80-99 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+--- surya chunk pages 101-120 / 242 ---
+chunk 100-119 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+[assemble] 0 pages -> ocr_out/book_surya.partial.txt; missing pages so far: []
+Everything up-to-date
+--- surya chunk pages 121-140 / 242 ---
+chunk 120-139 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+--- surya chunk pages 141-160 / 242 ---
+chunk 140-159 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+--- surya chunk pages 161-180 / 242 ---
+chunk 160-179 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+[assemble] 0 pages -> ocr_out/book_surya.partial.txt; missing pages so far: []
+Everything up-to-date
+--- surya chunk pages 181-200 / 242 ---
+chunk 180-199 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+--- surya chunk pages 201-220 / 242 ---
+chunk 200-219 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+--- surya chunk pages 221-240 / 242 ---
+chunk 220-239 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+[assemble] 0 pages -> ocr_out/book_surya.partial.txt; missing pages so far: []
+Everything up-to-date
+--- surya chunk pages 241-242 / 242 ---
+chunk 240-241 failed
+[norm] json files in work/surya_chunk: 0
+[norm] wrote 0 shards to ocr_out/surya_pages
+==== v2 [5/5] final assemble ====
+[assemble] 0 pages -> ocr_out/book_surya.txt; missing pages so far: []
+0 ocr_out/book_surya.txt
+To https://github.com/reshid-osmanli/game
+   3956a93..898b91e  HEAD -> arena/019fb85f-game
+V2 ALL DONE
+[exit handler] exit code = 0
