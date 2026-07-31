@@ -2,53 +2,72 @@ name: ocr-book
 
 on:
   push:
-    branches:
-      - arena/019fb85f-game
-    paths:
-      - 'ocr/**'
-      - '.github/workflows/ocr.yml'
+    branches: [main]
+  workflow_dispatch: {}
+  schedule:
+    - cron: '*/10 * * * *'
 
 permissions:
   contents: write
 
 concurrency:
   group: ocr-book
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   ocr:
     runs-on: ubuntu-latest
-    timeout-minutes: 350
+    timeout-minutes: 340
     env:
       OMP_THREAD_LIMIT: "1"
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout work branch
+        uses: actions/checkout@v4
         with:
           ref: arena/019fb85f-game
 
+      - name: Skip if ocr/ unchanged since last run
+        id: gate
+        run: |
+          git fetch --depth=1 origin main || true
+          TREE=$(git rev-parse HEAD:ocr)
+          LAST=$(git show origin/main:.ocr-last-tree 2>/dev/null || echo none)
+          echo "tree=$TREE last=$LAST"
+          if [ "$TREE" = "$LAST" ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "skip=false" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Install system deps
+        if: steps.gate.outputs.skip != 'true'
         run: |
           sudo apt-get update -y
-          sudo apt-get install -y --no-install-recommends poppler-utils tesseract-ocr qpdf
+          sudo apt-get install -y --no-install-recommends poppler-utils tesseract-ocr
 
-      - name: Install python deps + best Arabic traineddata
+      - name: Install gdown + best Arabic traineddata
+        if: steps.gate.outputs.skip != 'true'
         run: |
           pip install --quiet gdown
-          mkdir -p "$HOME/tessdata"
-          curl -L --retry 3 -o "$HOME/tessdata/ara.traineddata" \
-            https://github.com/tesseract-ocr/tessdata_best/raw/main/ara.traineddata
           TESSSYS=$(dirname "$(find /usr/share/tesseract-ocr -name 'eng.traineddata' | head -1)")
           echo "system tessdata dir: $TESSSYS"
-          sudo cp "$HOME/tessdata/ara.traineddata" "$TESSSYS/ara.traineddata"
+          sudo curl -L --retry 3 -o "$TESSSYS/ara.traineddata" \
+            https://github.com/tesseract-ocr/tessdata_best/raw/main/ara.traineddata
           ls -la "$TESSSYS"
 
       - name: Run OCR pipeline
+        if: steps.gate.outputs.skip != 'true'
         run: bash ocr/run.sh
 
-      - name: Upload results artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: ocr-results
-          path: ocr_out/
-          retention-days: 7
+      - name: Record ocr tree on main
+        if: steps.gate.outputs.skip != 'true' && success()
+        run: |
+          SHA=$(git rev-parse origin/arena/019fb85f-game:ocr 2>/dev/null || git rev-parse HEAD:ocr)
+          git fetch origin main
+          git checkout main
+          echo "$SHA" > .ocr-last-tree
+          git config user.name "ocr-bot"
+          git config user.email "ocr-bot@users.noreply.github.com"
+          git add .ocr-last-tree
+          git commit -m "ocr: record last tree $SHA" || echo "no change"
+          git push origin main || echo "push skipped"

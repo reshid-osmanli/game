@@ -27,8 +27,14 @@ pdftotext work/book.pdf ocr_out/embedded_text.txt 2>/dev/null || true
 EMB_CHARS=$(wc -c < ocr_out/embedded_text.txt 2>/dev/null || echo 0)
 echo "Embedded text chars: $EMB_CHARS"
 
-echo "==== [3/6] Sample renders (for quality inspection) ===="
+echo "==== [3/6] Sample renders + quick sample OCR ===="
 pdftoppm -f 1 -l 3 -r 100 -jpeg -gray work/book.pdf ocr_out/samples/page || true
+mkdir -p work/sample_hi
+pdftoppm -f 1 -l 3 -r 300 -gray -png work/book.pdf work/sample_hi/s || true
+for f in work/sample_hi/s-*.png; do
+  b=$(basename "$f" .png)
+  tesseract "$f" "ocr_out/samples/${b}" -l ara --psm 3 2>/dev/null || true
+done
 ls -la ocr_out/samples/ || true
 
 git config user.name "arena-ocr-bot"
@@ -80,6 +86,11 @@ echo "==== [6/6] Final assemble ===="
 assemble ocr_out/book.txt
 cp ocr_out/book.txt ocr_out/كتاب.txt 2>/dev/null || true
 wc -c ocr_out/book.txt
+{
+  echo "status: done"
+  echo "pages: ${TOTAL}"
+  echo "date: $(date -u +%FT%TZ)"
+} > ocr_out/DONE.txt
 git add ocr_out/
 git commit -m "ocr: complete ${TOTAL}/${TOTAL}" >/dev/null 2>&1 || true
 git push origin "HEAD:${BRANCH}" || true
